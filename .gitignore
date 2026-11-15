@@ -1,0 +1,21 @@
+# Build output
+.gradle/
+.kotlin/
+build/
+*.apk
+local.properties
+
+# Your own settings and secrets
+app/src/main/assets/config.json
+bridge/.token
+bridge/.env
+
+# What the bridge keeps about you
+bridge/state/
+bridge/memory/
+
+# Downloaded models and tools
+bridge/.venv/
+bridge/models/
+clips/
+__pycache__/

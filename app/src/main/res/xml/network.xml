@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <!--
+      The bridge speaks plain HTTP. Reach it only over Tailscale (or another VPN), whose tunnel is
+      encrypted, and every request carries the bridge token. Tailscale addresses differ per network,
+      so plain HTTP can't be limited to one address here.
+    -->
+    <base-config cleartextTrafficPermitted="true" />
+</network-security-config>

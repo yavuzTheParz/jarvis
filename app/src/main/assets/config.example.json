@@ -1,0 +1,14 @@
+{
+  "wakeFromHour": 5,
+  "morningEndHour": 13,
+  "eveningFromHour": 21,
+  "whatsappMinutes": 5,
+  "shortsSwipesAllowed": 1,
+  "nagMinutes": 5,
+  "quickChatNumber": "",
+  "currency": "$",
+  "morningAllowedPackages": ["com.whatsapp"],
+  "morningAllowedPackagePrefixes": [],
+  "morningAllowedUrls": [],
+  "bridgeUrl": ""
+}

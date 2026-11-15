@@ -1,0 +1,15 @@
+[Unit]
+Description=Jarvis bridge (phone to Claude over Tailscale)
+After=network-online.target tailscaled.service
+
+[Service]
+# Assumes the repository is at ~/jarvis; change the paths if it is not.
+WorkingDirectory=%h/jarvis/bridge
+EnvironmentFile=-%h/jarvis/bridge/.env
+Environment=PATH=%h/.local/bin:/usr/local/bin:/usr/bin
+ExecStart=%h/jarvis/bridge/.venv/bin/python %h/jarvis/bridge/server.py
+Restart=on-failure
+RestartSec=10
+
+[Install]
+WantedBy=default.target

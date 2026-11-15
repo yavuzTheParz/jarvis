@@ -1,0 +1,6 @@
+faster-whisper>=1.1
+piper-tts>=1.3
+numpy
+# GPU speech-to-text without a system CUDA install (optional; Whisper falls back to the CPU without them):
+# nvidia-cublas-cu12
+# nvidia-cudnn-cu12==9.*
